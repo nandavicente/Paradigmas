@@ -1,0 +1,16 @@
+import estrategias.*
+import kotlin.test.Test
+import kotlin.test.assertEquals
+
+class TestesEstrategias {
+
+    // Testa ordenação crescente
+    @Test fun testOrdenarCrescente() {
+        assertEquals(listOf(1, 2, 3), ordenarCrescente(listOf(3, 2, 1)))
+    }
+
+    // Testa filtragem de pares
+    @Test fun testFiltrarPares() {
+        assertEquals(listOf(2, 4), filtrarPares(listOf(1, 2, 3, 4, 5)))
+    }
+}
